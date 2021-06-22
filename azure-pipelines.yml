@@ -6,9 +6,8 @@
 trigger:
 - main
 
-pool:
-  vmImage: ubuntu-latest
-
+pool: Agent for AKS
+  
 steps:
 - task: AzureResourceManagerTemplateDeployment@3
   inputs:
