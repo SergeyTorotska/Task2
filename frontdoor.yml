@@ -1,0 +1,20 @@
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- task: AzureResourceManagerTemplateDeployment@3
+  inputs:
+    deploymentScope: 'Resource Group'
+    azureResourceManagerConnection: 'Azure subscription 1(f016713d-47fd-4917-a2c7-c2805377c59c)'
+    subscriptionId: 'f016713d-47fd-4917-a2c7-c2805377c59c'
+    action: 'Create Or Update Resource Group'
+    resourceGroupName: 'devopsAKS'
+    location: 'North Europe'
+    templateLocation: 'URL of the file'
+    csmFileLink: 'https://raw.githubusercontent.com/SergeyTorotska/Task2/main/fd.json'
+    overrideParameters: '-backendAddress1 green-cliff-00657b203.azurestaticapps.net -backendAddress2 brave-rock-0100e9900.azurestaticapps.net' 
+    deploymentMode: 'Incremental'
+
