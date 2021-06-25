@@ -33,7 +33,7 @@
             },
             "properties": {
                 "enableRBAC": true,
-                "dnsPrefix": "wqgwgw23432",
+                "dnsPrefix": "wqgwgw23dsg432",
                 "agentPoolProfiles": [
                     {
                         "name": "agentpool",
