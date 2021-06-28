@@ -204,16 +204,8 @@
               "type": "SQLServer"
             }
           }
-        },
-        {
-          "apiVersion": "2015-08-01",
-          "type": "config",
-          "name": "appsettings",
-          "dependsOn": [
-            "[resourceId('Microsoft.Web/Sites/', variables('webSiteName'))]"
-            
-          ]
         }
+        
       ]
     }
   ]
