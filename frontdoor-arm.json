@@ -20,6 +20,12 @@
        "metadata": {
         "description": "The hostname of the backend. Must be an IP address or FQDN."
       }
+    },
+     "backendAddress3": {
+      "type": "string",
+       "metadata": {
+        "description": "The hostname of the backend. Must be an IP address or FQDN."
+      }
     }
   },
   "resources": [
@@ -87,12 +93,21 @@
                   "httpsPort": 443,
                   "weight": 50,
                   "priority": 1,
+                  "enabledState": "Enabled"},
+                  
+                
+                  "address": "[parameters('backendAddress2')]",
+                  "backendHostHeader": "[parameters('backendAddress2')]",
+                  "httpPort": 80,
+                  "httpsPort": 443,
+                  "weight": 50,
+                  "priority": 1,
                   "enabledState": "Enabled"},{
 
                   
                               
-                  "address": "[parameters('backendAddress2')]",
-                  "backendHostHeader": "[parameters('backendAddress2')]",
+                  "address": "[parameters('backendAddress3')]",
+                  "backendHostHeader": "[parameters('backendAddress3')]",
                   "httpPort": 80,
                   "httpsPort": 443,
                   "weight": 50,
