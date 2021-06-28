@@ -1,0 +1,19 @@
+trigger:
+- main
+
+pool:
+  name: Default
+  vmImage: ubuntu-latest
+
+steps:
+- task: AzureResourceManagerTemplateDeployment@3
+  inputs:
+    deploymentScope: 'Resource Group'
+    azureResourceManagerConnection: 'Azure subscription 1(f016713d-47fd-4917-a2c7-c2805377c59c)'
+    subscriptionId: 'f016713d-47fd-4917-a2c7-c2805377c59c'
+    action: 'Create Or Update Resource Group'
+    resourceGroupName: 'devopsAks'
+    location: 'East US'
+    templateLocation: 'URL of the file'
+    csmFileLink: 'https://raw.githubusercontent.com/SergeyTorotska/Task2/main/aks-arm.json'
+    deploymentMode: 'Incremental'
