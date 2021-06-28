@@ -93,7 +93,7 @@
                   "httpsPort": 443,
                   "weight": 50,
                   "priority": 1,
-                  "enabledState": "Enabled"},
+                  "enabledState": "Enabled"},{
                   
                 
                   "address": "[parameters('backendAddress2')]",
