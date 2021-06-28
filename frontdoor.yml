@@ -15,6 +15,6 @@ steps:
     location: 'North Europe'
     templateLocation: 'URL of the file'
     csmFileLink: 'https://raw.githubusercontent.com/SergeyTorotska/Task2/main/fd.json'
-    overrideParameters: '-backendAddress1 green-cliff-00657b203.azurestaticapps.net -backendAddress2 brave-rock-0100e9900.azurestaticapps.net' 
+    overrideParameters: '-backendAddress1 green-cliff-00657b203.azurestaticapps.net -backendAddress2 brave-rock-0100e9900.azurestaticapps.net -backendAddress3 lively-sky-0d1a3441e.azurestaticapps.net' 
     deploymentMode: 'Incremental'
 
