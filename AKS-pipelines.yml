@@ -2,7 +2,7 @@ trigger:
 - main
 
 pool:
-  name: Default
+  name: AKS
   vmImage: ubuntu-latest
 
 steps:
